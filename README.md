@@ -1,4 +1,3 @@
-﻿# Weather_App
 # Weather_App
 
 🌦️ Modern Weather App 2025
@@ -67,4 +66,5 @@ Responsive Design: Uses max-width and viewport meta tags for mobile compatibilit
 
 📝 License
 This project is open-source and available under the MIT License.
+
 
