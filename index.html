@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <form class="search-bar" id="weather-form">
+                <input type="search" id="city-input"  class="search-input" placeholder="Enter City ...." required>
+                <button type="submit" class="search-button"><img src="./images/icons8-search.svg"></button>
+            </form>
+        </header>
+        <main>
+            <div class="weather-icons">
+                <div class="sun-icon"><img src="./images/reshot-icon-weather-VAUPX2QFJK.svg"></div>
+                <h1 id="temp">--</h1>
+                <p id="city-name" style="font-weight: bold;"></p>
+            </div>
+        </main>
+        <footer>
+            <div class="weather-icons footer-container">
+                <div class="group-info">
+                    <span><img src="./images/humidity-svgrepo-com.svg" alt="Humidity Icon"></span>
+                    <span id="humidity">--% humidity</span>
+                </div>
+                <div class="group-info">
+                    <span><img src="./images/wind-svgrepo-com.svg" alt="Wind speed icon"></span>
+                    <span id="wind-speed">-- km/h Wind</span>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="config.js"></script>
+    <script src="./app.js"></script>
+</body>
+</html>
