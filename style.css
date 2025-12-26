@@ -50,6 +50,16 @@ header input{
 }
 .search-button img:hover{
     cursor: pointer;
+    
+}
+.temp-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.weather-icons h1, .weather-icons p{
+    margin: 0;
 }
 .weather-icons .sun-icon img{
     width: 60px;
@@ -65,7 +75,7 @@ footer{
      bottom: 1rem;
 }
 .footer-container{
-    border: 1px solid orange;
+    /* border: 1px solid orange; */
     display: flex;
     gap: 1rem;
 }

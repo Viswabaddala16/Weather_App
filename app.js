@@ -1,4 +1,4 @@
-const BASE_URL = "api.openweathermap.org";
+const BASE_URL = "https://api.openweathermap.org/data/2.5/weather";
 
 const weatherForm = document.getElementById("weather-form");
 const cityInput = document.getElementById("city-input");
@@ -11,7 +11,7 @@ const tempElement = document.getElementById("temp");
 async function fetchWeather(city){
 
     try{
-        const response = await fetch(`${BASE_URL}${city}&appid=${API_KEY}`);
+        const response = await fetch(`${BASE_URL}?q=${city}&appid=${API_KEY}&units=metric`);
         
         if(!response.ok){
             throw new Error("City is not Found");
